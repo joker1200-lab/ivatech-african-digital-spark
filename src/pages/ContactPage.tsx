@@ -1,8 +1,8 @@
 import SEO from "@/components/SEO";
+import { heroImage } from "@/lib/images";
 import { motion } from "framer-motion";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import { useState } from "react";
-import heroImage from "@/assets/hero-image.jpg";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({ name: "", email: "", phone: "", subject: "", message: "" });

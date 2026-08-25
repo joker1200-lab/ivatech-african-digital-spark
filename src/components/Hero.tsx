@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
+import { heroImage } from "@/lib/images";
 import { ArrowRight, Shield, Wifi, Zap } from "lucide-react";
 import { Link } from "react-router-dom";
-import heroImage from "@/assets/hero-image.jpg";
 
 const Hero = () => {
   return (

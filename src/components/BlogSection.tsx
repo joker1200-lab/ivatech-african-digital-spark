@@ -1,11 +1,8 @@
 import { motion, useInView } from "framer-motion";
+import { portfolio1,portfolio3,portfolio4,portfolio5 } from "@/lib/images";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
 import { Calendar, ArrowRight } from "lucide-react";
-import portfolio1 from "@/assets/portfolio-1.jpg";
-import portfolio3 from "@/assets/portfolio-3.jpg";
-import portfolio4 from "@/assets/portfolio-4.jpg";
-import portfolio5 from "@/assets/portfolio-5.jpg";
 
 export const blogPosts = [
   {

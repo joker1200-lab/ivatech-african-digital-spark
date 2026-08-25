@@ -1,8 +1,8 @@
 import { motion, useInView } from "framer-motion";
+import { aboutImage } from "@/lib/images";
 import { useRef } from "react";
 import { CheckCircle } from "lucide-react";
 import { Link } from "react-router-dom";
-import aboutImage from "@/assets/about-image.jpg";
 
 const highlights = [
   "Established in 2011 with 14+ years of excellence",

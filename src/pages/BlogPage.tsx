@@ -1,9 +1,9 @@
 import SEO from "@/components/SEO";
+import { heroImage } from "@/lib/images";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { Calendar } from "lucide-react";
 import { blogPosts } from "@/components/BlogSection";
-import heroImage from "@/assets/hero-image.jpg";
 
 const BlogPage = () => (
   <>
