@@ -59,8 +59,8 @@ const Footer = () => (
       </div>
 
 
-      <div className="border-t border-background/10 mt-12 pt-8 text-center">
-        <p className="text-sm opacity-50 font-body">
+      <div className="border-t border-border mt-10 pt-6 text-center">
+        <p className="text-xs md:text-sm text-muted-foreground font-body">
           © {new Date().getFullYear()} Ivatech Informatics Limited. All rights reserved.
         </p>
       </div>
