@@ -32,7 +32,7 @@ const PortfolioSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
           {projects.map((project, index) => (
             <motion.div
               key={project.title}
@@ -41,7 +41,7 @@ const PortfolioSection = () => {
               transition={{ duration: 0.5, delay: index * 0.08 }}
               className="group rounded-xl overflow-hidden border border-border card-shadow hover:card-shadow-hover transition-all duration-300"
             >
-              <div className="relative overflow-hidden h-52">
+              <div className="relative overflow-hidden h-40 sm:h-52">
                 <img
                   src={project.image}
                   alt={project.title}

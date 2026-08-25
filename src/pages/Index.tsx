@@ -6,6 +6,8 @@ import Partners from "@/components/Partners";
 import Testimonials from "@/components/Testimonials";
 import PortfolioSection from "@/components/PortfolioSection";
 import BlogSection from "@/components/BlogSection";
+import SolarROICalculator from "@/components/SolarROICalculator";
+import CoverageMap from "@/components/CoverageMap";
 import FAQ from "@/components/FAQ";
 import CTA from "@/components/CTA";
 
@@ -19,6 +21,8 @@ const Index = () => {
       <Hero />
       <Services />
       <AboutSection />
+      <SolarROICalculator />
+      <CoverageMap />
       <Partners />
       <PortfolioSection />
       <Testimonials />

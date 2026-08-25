@@ -1,18 +1,20 @@
 import { motion } from "framer-motion";
 import { heroImage } from "@/lib/images";
 import { ArrowRight, Shield, Wifi, Zap } from "lucide-react";
+import ProjectCostCalculator from "./ProjectCostCalculator";
 import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden">
+    <section className="relative min-h-screen lg:min-h-screen flex items-center overflow-hidden">
       {/* Background image */}
       <div className="absolute inset-0">
         <img src={heroImage} alt="Ivatech engineer working on telecom tower" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-hero-gradient opacity-85" />
       </div>
 
-      <div className="relative container mx-auto px-4 pt-20 pb-16">
+      <div className="relative container mx-auto px-4 pt-28 pb-16 md:pt-32">
+        <div className="grid lg:grid-cols-[1.15fr_1fr] gap-10 lg:gap-14 items-center">
         <div className="max-w-3xl">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -28,7 +30,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary-foreground leading-tight mb-6"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-heading font-bold text-primary-foreground leading-tight mb-6"
           >
             Turnkey Solutions for{" "}
             <span className="text-secondary-foreground/90">Telecoms</span>,{" "}
@@ -85,6 +87,11 @@ const Hero = () => {
               </div>
             ))}
           </motion.div>
+        </div>
+
+          <div className="w-full max-w-md lg:max-w-none mx-auto lg:mx-0">
+            <ProjectCostCalculator />
+          </div>
         </div>
       </div>
     </section>
