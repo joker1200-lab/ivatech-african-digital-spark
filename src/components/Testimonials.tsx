@@ -1,10 +1,7 @@
 import { motion, useInView } from "framer-motion";
+import { testimonial1,testimonial2,testimonial3,testimonial4 } from "@/lib/images";
 import { useRef } from "react";
 import { Star, Quote } from "lucide-react";
-import testimonial1 from "@/assets/testimonial-1.jpg";
-import testimonial2 from "@/assets/testimonial-2.jpg";
-import testimonial3 from "@/assets/testimonial-3.jpg";
-import testimonial4 from "@/assets/testimonial-4.jpg";
 
 const testimonials = [
   {

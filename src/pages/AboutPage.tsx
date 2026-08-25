@@ -1,8 +1,7 @@
 import SEO from "@/components/SEO";
+import { aboutImage,heroImage } from "@/lib/images";
 import { motion } from "framer-motion";
 import { CheckCircle, Award, Users, Target, Eye } from "lucide-react";
-import aboutImage from "@/assets/about-image.jpg";
-import heroImage from "@/assets/hero-image.jpg";
 import CTA from "@/components/CTA";
 
 const team = [

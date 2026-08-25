@@ -1,8 +1,8 @@
 import SEO from "@/components/SEO";
+import { heroImage } from "@/lib/images";
 import { motion } from "framer-motion";
 import { Radio, Shield, Zap, Cable, Camera, Flame, Server, Wrench, Wind, Lock } from "lucide-react";
 import CTA from "@/components/CTA";
-import heroImage from "@/assets/hero-image.jpg";
 
 const allServices = [
   {
