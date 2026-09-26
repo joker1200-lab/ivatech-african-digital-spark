@@ -9,10 +9,10 @@ interface Message {
 
 const botResponses: Record<string, string> = {
   services: "We offer telecommunications, CCTV & surveillance, access control, fire detection, structured cabling, electrical services, renewable energy, and maintenance & support services.",
-  contact: "You can reach us at +255 788 222 899 or email ivatech@ivatech.co.tz. Our office is at 3rd Floor, EAGT Building, Dar es Salaam.",
+  contact: "You can reach us at +255 789 888 878 or email ivatech.info@gmail.com. Our office is at 3rd Floor, EAGT Building, Dar es Salaam.",
   location: "We are located at 3rd Floor, EAGT Building, PO Box 38698, Dar es Salaam, Tanzania.",
   cctv: "We install both analog/HD and IP-based CCTV systems with AI-powered analytics, facial recognition, LPR, people counting, and perimeter detection.",
-  price: "Pricing depends on project scope and requirements. Please contact us at +255 788 222 899 or email ivatech@ivatech.co.tz for a custom quote.",
+  price: "Pricing depends on project scope and requirements. Please contact us at +255 789 888 878 or email ivatech.info@gmail.com for a custom quote.",
   maintenance: "Yes! We provide comprehensive maintenance services including preventive maintenance, spare parts management, and 24/7 network monitoring.",
 };
 
@@ -25,7 +25,7 @@ const getResponse = (message: string): string => {
   if (lower.includes("price") || lower.includes("cost") || lower.includes("quote") || lower.includes("how much")) return botResponses.price;
   if (lower.includes("maintenance") || lower.includes("support") || lower.includes("repair")) return botResponses.maintenance;
   if (lower.includes("hello") || lower.includes("hi") || lower.includes("hey")) return "Hello! Welcome to Ivatech Informatics. How can I help you today? You can ask about our services, location, pricing, or contact details.";
-  return "Thank you for your message! For detailed inquiries, please contact us at +255 788 222 899 or email ivatech@ivatech.co.tz. You can also ask me about our services, location, or pricing.";
+  return "Thank you for your message! For detailed inquiries, please contact us at +255 789 888 878 or email ivatech.info@gmail.com. You can also ask me about our services, location, or pricing.";
 };
 
 const Chatbot = () => {

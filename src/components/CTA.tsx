@@ -35,11 +35,11 @@ const CTA = () => {
               <ArrowRight className="w-4 h-4" />
             </Link>
             <a
-              href="tel:+255788222899"
+              href="tel:+255789888878"
               className="inline-flex items-center justify-center gap-2 border-2 border-primary-foreground/40 text-primary-foreground px-8 py-3.5 rounded-lg font-heading font-semibold hover:bg-primary-foreground/10 transition-all"
             >
               <Phone className="w-4 h-4" />
-              +255 788 222 899
+              +255 789 888 878
             </a>
           </div>
         </motion.div>

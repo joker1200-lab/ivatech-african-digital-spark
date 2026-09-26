@@ -33,7 +33,7 @@ const faqs = [
   },
   {
     q: "How do I request a quote?",
-    a: "You can request a quote by calling us at +255 788 222 899, emailing ivatech@ivatech.co.tz, or visiting our contact page. Our team will assess your requirements and provide a detailed proposal.",
+    a: "You can request a quote by calling us at +255 789 888 878, emailing ivatech.info@gmail.com, or visiting our contact page. Our team will assess your requirements and provide a detailed proposal.",
   },
 ];
 
