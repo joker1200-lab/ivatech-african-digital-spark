@@ -36,7 +36,7 @@ const ContactPage = () => {
           <div className="space-y-6">
             {[
               { icon: MapPin, title: "Visit Us", text: "3rd Floor, EAGT Building\nPO Box 38698, Dar es Salaam" },
-              { icon: Phone, title: "Call Us", text: "+255 789 888 878" },
+              { icon: Phone, title: "Call Us", text: "+255 789 888 878\n+255 723 116 111" },
               { icon: Mail, title: "Email Us", text: "ivatech.info@gmail.com" },
               { icon: Clock, title: "Working Hours", text: "Mon - Fri: 8:00 AM - 5:00 PM\nSat: 9:00 AM - 1:00 PM" },
             ].map((item, i) => (
