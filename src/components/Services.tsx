@@ -1,47 +1,54 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { Radio, Shield, Zap, Cable, Camera, Flame, Server, Wrench } from "lucide-react";
 import { Link } from "react-router-dom";
+import iconTelecom from "@/assets/icon-telecom.png";
+import iconCctv from "@/assets/icon-cctv.png";
+import iconAccess from "@/assets/icon-access.png";
+import iconFire from "@/assets/icon-fire.png";
+import iconCabling from "@/assets/icon-cabling.png";
+import iconElectrical from "@/assets/icon-electrical.png";
+import iconSolar from "@/assets/icon-solar.png";
+import iconMaintenance from "@/assets/icon-maintenance.png";
 
 const services = [
   {
-    icon: Radio,
+    icon: iconTelecom,
     title: "Telecommunications",
     description: "Complete 2G, 3G, WiMAX network planning, site acquisition, BSS installation, commissioning and optimization.",
   },
   {
-    icon: Camera,
+    icon: iconCctv,
     title: "CCTV & Surveillance",
     description: "IP and HD CCTV systems with AI-powered analytics, facial recognition, LPR, and remote monitoring solutions.",
   },
   {
-    icon: Shield,
+    icon: iconAccess,
     title: "Access Control",
     description: "Biometric scanners, RFID systems, boom gates, turnstiles, electric fencing and perimeter detection.",
   },
   {
-    icon: Flame,
+    icon: iconFire,
     title: "Fire Detection",
     description: "Conventional and addressable fire detection systems, alarm installations and maintenance for commercial buildings.",
   },
   {
-    icon: Cable,
+    icon: iconCabling,
     title: "Structured Cabling",
     description: "Voice and data cable installation, fiber optic networks, server room setup and structured wiring solutions.",
   },
   {
-    icon: Zap,
+    icon: iconElectrical,
     title: "Electrical Services",
     description: "Residential, commercial and industrial electrical solutions including panel installations and power systems.",
   },
   {
-    icon: Server,
+    icon: iconSolar,
     title: "Renewable Energy",
     description: "Solar power systems, energy-efficient solutions and sustainable power infrastructure for telecom sites.",
   },
   {
-    icon: Wrench,
+    icon: iconMaintenance,
     title: "Maintenance & Support",
     description: "Comprehensive maintenance, vendor managed inventory, spare parts management and 24/7 network support.",
   },
@@ -76,8 +83,15 @@ const Services = () => {
               transition={{ duration: 0.5, delay: index * 0.08 }}
               className="group bg-card rounded-xl p-6 card-shadow hover:card-shadow-hover transition-all duration-300 hover:-translate-y-1 border border-border"
             >
-              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
-                <service.icon className="w-6 h-6 text-primary group-hover:text-primary-foreground transition-colors" />
+              <div className="w-16 h-16 md:w-20 md:h-20 mb-4 transition-transform duration-300 group-hover:scale-110 group-hover:-rotate-3">
+                <img
+                  src={service.icon}
+                  alt={`${service.title} icon`}
+                  loading="lazy"
+                  width={80}
+                  height={80}
+                  className="w-full h-full object-contain drop-shadow-md"
+                />
               </div>
               <h3 className="text-lg font-heading font-bold text-foreground mb-2">{service.title}</h3>
               <p className="text-sm text-muted-foreground font-body leading-relaxed">{service.description}</p>
