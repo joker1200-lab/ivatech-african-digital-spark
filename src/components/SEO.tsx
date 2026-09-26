@@ -32,8 +32,20 @@ const SEO = ({ title, description, canonical, type = "website" }: SEOProps) => (
           addressCountry: "TZ",
           postalCode: "38698",
         },
-        telephone: "+255788222899",
-        email: "ivatech@ivatech.co.tz",
+        telephone: "+255789888878",
+        email: "ivatech.info@gmail.com",
+        contactPoint: [
+          {
+            "@type": "ContactPoint",
+            telephone: "+255789888878",
+            contactType: "customer service",
+          },
+          {
+            "@type": "ContactPoint",
+            telephone: "+255723116111",
+            contactType: "sales",
+          },
+        ],
       })}
     </script>
   </Helmet>

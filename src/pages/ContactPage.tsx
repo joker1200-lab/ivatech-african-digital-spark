@@ -15,7 +15,7 @@ const ContactPage = () => {
 
   return (
     <>
-      <SEO title="Contact Us | Ivatech Informatics Limited" description="Get in touch with Ivatech Informatics Limited. Call +255 788 222 899 or email ivatech@ivatech.co.tz for telecoms, security and energy solutions." />
+      <SEO title="Contact Us | Ivatech Informatics Limited" description="Get in touch with Ivatech Informatics Limited. Call +255 789 888 878 or email ivatech.info@gmail.com for telecoms, security and energy solutions." />
 
       <section className="relative pt-32 pb-20 overflow-hidden">
         <div className="absolute inset-0">
@@ -36,8 +36,8 @@ const ContactPage = () => {
           <div className="space-y-6">
             {[
               { icon: MapPin, title: "Visit Us", text: "3rd Floor, EAGT Building\nPO Box 38698, Dar es Salaam" },
-              { icon: Phone, title: "Call Us", text: "+255 788 222 899" },
-              { icon: Mail, title: "Email Us", text: "ivatech@ivatech.co.tz" },
+              { icon: Phone, title: "Call Us", text: "+255 789 888 878\n+255 723 116 111" },
+              { icon: Mail, title: "Email Us", text: "ivatech.info@gmail.com" },
               { icon: Clock, title: "Working Hours", text: "Mon - Fri: 8:00 AM - 5:00 PM\nSat: 9:00 AM - 1:00 PM" },
             ].map((item, i) => (
               <motion.div
